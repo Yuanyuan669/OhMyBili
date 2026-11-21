@@ -1,0 +1,49 @@
+{
+  "module": {
+    "name": "web",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "WebAbility",
+    "deviceTypes": [
+      "default",
+      "phone"
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "$string:module_desc",
+        "usedScene": {
+          "abilities": [
+            "WebAbility"
+          ],
+          "when": "always"
+        }
+      }
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "WebAbility",
+        "srcEntry": "./ets/webability/WebAbility.ets",
+        "description": "$string:WebAbility_desc",
+        "icon": "$media:app_icon",
+        "label": "$string:WebAbility_label",
+        "startWindowIcon": "$media:app_icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

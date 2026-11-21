@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "OhMyBili web shell"
+    },
+    {
+      "name": "WebAbility_desc",
+      "value": "OhMyBili web shell"
+    },
+    {
+      "name": "WebAbility_label",
+      "value": "OhMyBili"
+    }
+  ]
+}
